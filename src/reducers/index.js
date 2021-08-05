@@ -1,8 +1,9 @@
-
+// SE GENERA UN NUEVO ESTADO Y "PISA" AL ANTERIOR
 const initialState = {
     moviesFavourites: [],
     moviesLoaed: [],
     movieDetail: {},
+    
 }
 
 function rootReducer(state = initialState, action) {
