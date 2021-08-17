@@ -3,29 +3,13 @@ import { connect } from "react-redux";
 import { removeMovieFavorite } from "../../actions/index.js";
 import { Link } from 'react-router-dom';
 import './Favorites.css';
-import ReactCardFlip from 'react-card-flip';
+
 
 export class ConnectedList extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isFlipped: false
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(event) {
-    event.preventDefault();
-    this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
-  }
-
   render() {
     return (
       <div>
         <h2 className="fav">Favorites Movies</h2>
-      <ReactCardFlip
-        isFlipped={this.state.isFlipped}
-        flipDirection="vertical">
       <div className="cont">
           {this.props.movies.map(movie =>
         
@@ -36,12 +20,9 @@ export class ConnectedList extends Component {
             </Link>
             <button className="danger" onClick={() => this.props.removeMovieFavorite(movie.imdbID)}> ✖ </button>
           </div>
-          
-          
-          
           )}
        </div>
-          </ReactCardFlip>
+
       </div>
     );
   }
