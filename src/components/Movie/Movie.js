@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { getMovieDetail } from '../../actions/index.js';
-
 import './Movie.css';
 
 
@@ -19,7 +18,7 @@ componentDidMount () {
             Actors:
             <h6>{this.props.movie.Actors}</h6>
             <h4>Year: {this.props.movie.Year}</h4>
-            <img src={this.props.movie.Poster} alt=''/>
+            <img src={this.props.movie.Poster} alt='Poster'/>
             <h4>{this.props.movie.Plot}</h4>
         </div>
         )
@@ -37,7 +36,6 @@ function mapDispatchToProps (dispatch) {
         getDetail: idMovie => dispatch(getMovieDetail(idMovie))        
     }
 }
-
 
 
 export default connect(mapStateProps, mapDispatchToProps) (Movie);

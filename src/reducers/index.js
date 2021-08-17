@@ -8,11 +8,21 @@ const initialState = {
 
 function rootReducer(state = initialState, action) {
     if (action.type === "ADD_MOVIE_FAVORITE") {
-        return {
-          ...state,
-          moviesFavourites: state.moviesFavourites.concat(action.payload)
-          //movies: [...state.movies, action.payload]
+        console.log(action.payload)
+        let newFavorite = state.moviesFavourites.find(fav => fav.imdbID === action.payload.imdbID)
+        if (Array.isArray(state.moviesFavourites)) {
+            if(newFavorite){
+                return state
+            }
         }
+        return {
+        ...state,
+        moviesFavourites: state.moviesFavourites !== undefined ? [...state.moviesFavourites, action.payload] : [action.payload]
+        }
+
+        // return {
+        //   ...state,
+        //   moviesFavourites: [state.moviesFavourites, newFavorite ]        
     }
     if (action.type === "GET_MOVIES") {
         //console.log(action.payload)

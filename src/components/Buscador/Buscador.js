@@ -40,13 +40,14 @@ export class Buscador extends Component {
           <button className="botonS" type="submit">🔍</button>
         </form>
         </div>
-        <ul>
+        <ul className="uele">
          {this.props.movies && this.props.movies.map(movie => (
-           <div key={movie.imdbID}>
+           <div className="cardMovie" key={movie.imdbID}>
              <Link to={`/movie/${movie.imdbID}`}>
-             <h4>{movie.Title}</h4>
+             <img src={movie.Poster} alt={movie.Title} width="45rem"/>
              </Link>
-             <button onClick={() => this.props.addMovieFavorite(movie) }> ♥ </button>
+             <h4 className="result">{movie.Title}</h4>
+             <button className="botonS" onClick={() => this.props.addMovieFavorite(movie) }> 💛 </button>
            </div>
          ) )
          }
@@ -69,10 +70,5 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Buscador);
+export default connect( mapStateToProps, mapDispatchToProps ) (Buscador);
 
-
-//export default Buscador;

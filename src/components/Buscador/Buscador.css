@@ -1,3 +1,17 @@
+.cardMovie {
+    margin: 1%;
+    width: auto;
+    height: auto;
+    box-shadow: 2px 2px 5px rgb(119, 15, 15);
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+.uele {
+    margin:0;
+    padding: 0;
+}
+
 .search{
     justify-content: center;
     align-items: center;
@@ -34,7 +48,11 @@
 }
 .botonS:hover {
     color: white;
-    background-color: rgba(0, 0, 0, 0.473);
+    background-color: rgba(0, 0, 0, 0.733);
     border-radius: 5px;
     align-items: center;
+}
+
+.result{
+    text-decoration: none;
 }

@@ -1,3 +1,30 @@
-.cnt {
-    padding-top: 10px;
+.cont {
+    margin: 2%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.cardMovies {
+    margin: 1%;
+    width: 20rem;
+    height: auto;
+    box-shadow: 2px 2px 5px rgb(119, 15, 15);
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+.fav {
+    margin-left: 2%;
+}
+.danger {
+    margin-right: 0;
+    margin-bottom: 30%;
+    background-color: red;
+}
+.danger:hover {
+   
+    background-color: rgba(255, 0, 0, 0.575);
 }
