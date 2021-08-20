@@ -1,30 +1,36 @@
+.fav {
+    margin-left: 2%;
+}
 .cont {
     margin: 2%;
-    margin-left: 5%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    
+    flex-wrap: wrap;
 }
+
 .cardMovies {
+    background:linear-gradient(rgba(255, 0, 0, 0.5),rgba(0, 0, 0, 0.753));
     margin: 1%;
+    padding: 1%;
     width: 20rem;
     height: auto;
-    box-shadow: 2px 2px 5px rgb(119, 15, 15);
+    box-shadow: 2px 2px 5px rgb(26, 18, 18);
     display: flex ;
     justify-content: space-around;
     align-items: center;
+    border-radius: 2%;
 }
-.fav {
-    margin-left: 2%;
+.cardMovies h3 {
+    margin: 1px;
 }
+
 .danger {
-    margin-right: 0;
-    margin-bottom: 30%;
+    margin: 5px;
+    margin-bottom: 25%;
     background-color: red;
 }
 .danger:hover {
-   
-    background-color: rgba(255, 0, 0, 0.575);
+    background-color: rgba(255, 0, 0, 0.178);
 }

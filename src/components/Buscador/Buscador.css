@@ -1,15 +1,29 @@
+.find{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .cardMovie {
     margin: 1%;
-    width: auto;
-    height: auto;
-    box-shadow: 2px 2px 5px rgb(119, 15, 15);
+    margin: 1%;
+    padding: 1%;
+    width: 20rem;
+    height: 10rem;
+    background: radial-gradient(rgba(255, 0, 0, 0.521),rgba(0, 0, 0, 0.521)) ;
+    box-shadow: 2px 2px 5px rgb(26, 18, 18);
     display: flex ;
     justify-content: space-around;
     align-items: center;
+    border-radius: 2%;
 }
 .uele {
     margin:0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .search{
@@ -27,10 +41,10 @@
     margin-left: 2%;
 }
 .busc{
-    background-color: rgba(255, 0, 0, 0.185);
+    background-color: rgba(255, 0, 0, 0.39);
     border-radius: 10px;
     border:none;
-    height: 20px;
+    height: 22px;
 }
 .busca{
     margin-left: 2%;
@@ -38,6 +52,10 @@
 
 .label {
     padding-right: 1px;
+}
+.cardDet{
+    justify-content: center;
+    align-items: center;
 }
 
 .botonS {
@@ -48,11 +66,16 @@
 }
 .botonS:hover {
     color: white;
-    background-color: rgba(0, 0, 0, 0.733);
+    background-color: rgba(0, 0, 0, 0.514);
     border-radius: 5px;
     align-items: center;
 }
 
 .result{
+    color: aliceblue;
     text-decoration: none;
+}
+
+.imgBusc {
+    margin-top: 5px;
 }

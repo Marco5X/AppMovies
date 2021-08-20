@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../../pop.png'
+import Logo from '../../images/pop.png'
 import './Navbar.css';
 
 export default function NavBar() {
@@ -15,6 +15,7 @@ export default function NavBar() {
                     <li className="list-item">
                         <NavLink exact to="/" >Home</NavLink>
                         <NavLink to="/favs" >Favorites</NavLink>
+                        <NavLink to="/about" >About</NavLink>
                     </li>
                 </ul>
             </nav>

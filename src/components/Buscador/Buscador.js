@@ -25,7 +25,7 @@ export class Buscador extends Component {
     return (
       <div>
         <div className="contain">
-        <h2 className="busca"> Search the movie</h2>
+        <h2 className="busca"> Search movie</h2>
         <form className="form-container" onSubmit={(e) => this.handleSubmit(e)}>{/*aqui se bindea de manera automatica*/}
           <div className= "search">
             <label className="label" htmlFor="title">Movie: </label>
@@ -41,13 +41,15 @@ export class Buscador extends Component {
         </form>
         </div>
         <ul className="uele">
-         {this.props.movies && this.props.movies.map(movie => (
+         {!this.props.movies? <h1 className="find">Looking for a movie</h1>: this.props.movies.map(movie => (
            <div className="cardMovie" key={movie.imdbID}>
+             <div className="cardDet">
+               <h3 className="result">{movie.Title}</h3>
+               <button className="botonS" onClick={() => this.props.addMovieFavorite(movie) }> Add Favorite 💛 </button>
+            </div> 
              <Link to={`/movie/${movie.imdbID}`}>
-             <img src={movie.Poster} alt={movie.Title} width="45rem"/>
+             <img className="imgBusc" src={movie.Poster} alt={movie.Title} width="95rem"/>
              </Link>
-             <h4 className="result">{movie.Title}</h4>
-             <button className="botonS" onClick={() => this.props.addMovieFavorite(movie) }> 💛 </button>
            </div>
          ) )
          }
