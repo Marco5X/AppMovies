@@ -2,7 +2,7 @@
 
 body {
   /* background-image: url("https://www.abajournal.com/images/mag_images/0818_FMOVIES_BACKGROUND.jpg"); */
-  background-image: url("../../app-movies//src/images/fondo.jpg");
+  background-image: url("../src/images/fondo.jpg");
   background-size: cover;
   height: 100vh;
   margin: 0;
