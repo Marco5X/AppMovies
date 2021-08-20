@@ -6,6 +6,7 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^13.1.1",
     "bootstrap": "^5.0.2",
+    "gh-pages": "^3.2.3",
     "node-fetch": "^2.6.1",
     "prompt-sync": "^4.2.0",
     "react": "^17.0.2",
@@ -20,6 +21,8 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
