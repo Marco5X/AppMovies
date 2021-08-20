@@ -16,6 +16,20 @@
     align-items: center;
     border-radius: 2%;
 }
+.cardMovie:hover {
+    margin: 1%;
+    margin: 1%;
+    padding: 1%;
+    width: 20rem;
+    height: 10rem;
+    background: radial-gradient(rgba(255, 0, 0, 0.521),rgba(0, 0, 0, 0.521)) ;
+    box-shadow: 2px 2px 5px rgb(250, 250, 250);
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2%;
+}
+
 .uele {
     margin:0;
     padding: 0;
