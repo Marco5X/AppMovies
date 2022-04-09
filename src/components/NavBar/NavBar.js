@@ -7,7 +7,7 @@ export default function NavBar() {
     return (
         <header className="navbar">
             <div>                
-                <img src={Logo} width="35" height="35" className="d-inline-block align-top" alt="Logo" />
+                <img src={Logo} width="35" height="35" className=" align-top" alt="Logo" />
             </div>
             <h2>MOVIE APP</h2>
             <nav>

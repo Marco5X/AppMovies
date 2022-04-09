@@ -1,8 +1,10 @@
 .find{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .cardMovie {
     margin: 1%;
     margin: 1%;
@@ -67,7 +69,7 @@
 .label {
     padding-right: 1px;
 }
-.cardDet{
+.cardDetails{
     justify-content: center;
     align-items: center;
 }

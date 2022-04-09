@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background:transparent;
+  background-color:transparent;
   width: auto;
   height: auto;
   border-radius: 2%;
@@ -28,14 +28,22 @@
   justify-content: center;
   text-align: center;
   margin-left: 1px;
+  border-radius: 5%;
+  background:linear-gradient(rgba(0, 0, 0, 0.984), rgba(0, 0, 0, 0.977)) 
 
 }
+
 .cardDet h2{
-  background:linear-gradient(rgba(255, 0, 0, 0.466), rgba(0, 0, 0, 0.699)) 
+  background:linear-gradient(rgba(255, 0, 0, 0.58), rgba(0, 0, 0, 0.374));
+  margin: 8% 0 8% 0;
 }
+
 .cardDet h5{
-  margin: 0;
+  border-radius: 2%;
+  background:linear-gradient(rgba(0, 0, 0, 0.986), rgba(0, 0, 0, 0.774));
+  margin: 38% 0 8% 0;
 }
-.cardDet h6{
-  margin: 0;
+
+.cardDet h4{
+  margin: 8% 0 8% 0;
 }
