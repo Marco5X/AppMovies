@@ -7,7 +7,6 @@ import './Favorites.css';
 
 export class ConnectedList extends Component {
   render() {
-    console.log(this.props.movies)
     return (
       <div >
       <h2 className="fav">Favorites Movies</h2>
