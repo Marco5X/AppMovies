@@ -34,7 +34,7 @@ export default function About() {
         </div>
       </div>
       <h3 className="linkRepo">Link to repository</h3>
-      <a className="link" href="https://github.com/Marco5X/AppMovies" ><>👉🏼</> Here</a>
+      <a className="link" href="https://github.com/Marco5X/AppMovies" ><>👉🏼</> Here </a>
     </div>
   )
 }

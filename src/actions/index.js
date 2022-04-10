@@ -19,7 +19,7 @@ export function getMoviesUpcoming() {
     };
 }
 
-export function getMovieDetail(id){//id
+export function getMovieDetail(id){
     return function (dispatch) {
         return fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=e6b38212baf459bc1749d1e0fa386e4c&language=es`)//+ id otra `http://www.omdbapi.com/?apikey=20dac387&i=${imdbID}`
         .then(response => response.json())

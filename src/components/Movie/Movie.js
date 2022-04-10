@@ -18,7 +18,7 @@ componentDidMount () {
              <FlipCard 
         front={
           <div>
-            <img className="imgDet" src={`https://image.tmdb.org/t/p/w500`+this.props.movie.poster_path} alt={this.props.movie.title} width="160rem"/>
+            <img className="imgDet" src={`https://image.tmdb.org/t/p/w500`+this.props.movie.poster_path} alt={this.props.movie.title} width="170rem"/>
           </div>
           } 
         back={
