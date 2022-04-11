@@ -1,22 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getMovieDetail, getMovieVideo } from '../../actions/index.js';
+import { getMovieDetail } from '../../actions/index.js';
 import './Movie.css';
 import { FlipCard } from 'react-flippingcard'
 
 class Movie extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      video: this.props.video
-    };
-  }
 
   componentDidMount() {
     const movieId = this.props.match.params.id;
     this.props.getDetail(movieId)
-    this.props.getVideo(movieId)
   }
+  
   render() {
     console.log(this.props.movie)
     return (
@@ -42,15 +36,13 @@ class Movie extends React.Component {
 
 function mapStateProps(state) {
   return {
-    movie: state.movieDetail,
-    video: state.movieVideo
+    movie: state.movieDetail
   }
 }
 
 function mapDispatchToProps(dispatch) {
   return {
     getDetail: idMovie => dispatch(getMovieDetail(idMovie)),
-    getVideo: id => dispatch(getMovieVideo(id))
   }
 }
 
